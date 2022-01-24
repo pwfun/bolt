@@ -1,7 +1,7 @@
 ---
-title: "Release Notes"
+title: "New Database Connector Authentication Features are live"
 description: "My Fivetran Simulation"
-lead: "Some release notes stuff"
+lead: "January 24, 2022"
 date: 2020-11-28T08:48:57+00:00
 lastmod: 2020-11-28T08:48:57+00:00
 draft: false
@@ -15,18 +15,23 @@ toc: true
 
 ## What's new?
 
-Some text here
+We’ve just enabled a series of Connector authentication features for selected customers in private beta.  
 
-{{< alert icon="👉" text="No prior knowledge of GraphQL is required, though some familiarity with query languages will benefit you throughout this guide." />}}
+## How these changes benefit users
 
-## New Feature Heading
+Users without admin privileges have reported authentication friction when attempting to troubleshoot their Database Connectors. Where API connectors merely require API keys and secrets, Database Connectors require credentials that some users can’t easily access.
 
-GraphQL services require [object types, fields](#), and functions. With these three building blocks, you can create a GraphQL service by following these steps:
+These new authentication features run inside the customer’s existing VPC.  We expect these improvements to address the authentication blockers users have reported and streamline the troubleshooting experience with a series of measures that take place under the hood:
 
-1. Define an object type.
-2. Define fields on the object type.
-3. Provide functions for each field and type.
+- Connectors now check for allowlisted IP addresses.
+- Connectors now validate whether a user’s login is enabled.
+- Connectors now check whether the database is in maintenance status.
+- Fivetran now alerts customers automatically when issues arise.
 
-## Support
+## Required Actions
 
-Reach out to Fivetran support with any questions you may have. [Support →](https://support.fivetran.com/hc/en-us).
+Customers in private beta already have access to the new features. If you’d like to learn more, check out our internal design document on Database Connectivity Improvements.  To view the files we’ve changed to enable these features, locate the `connectivitychecker.java` file within the Connectivity checker module.
+
+## Feedback
+
+Feel free to post any questions or feedback you may have in our #database-connectors project channel, or reach out to @IanWoods. 
