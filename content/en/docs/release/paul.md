@@ -30,7 +30,7 @@ These new authentication features run inside the customer’s existing VPC.  We 
 
 ## Required Actions
 
-Customers in private beta already have access to the new features. If you’d like to learn more, check out our internal design document on Database Connectivity Improvements.  To view the files we’ve changed to enable these features, locate the `connectivitychecker.java` file within the Connectivity checker module.
+Customers in private beta already have access to the new features. If you’d like to learn more, check out our internal design document on [Database Connectivity Improvements](#).  To view the files we’ve changed to enable these features, locate the `connectivitychecker.java` file within the Connectivity checker module.
 
 ## Feedback
 
