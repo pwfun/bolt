@@ -17,7 +17,9 @@ toc: true
 
 GraphQL is an API query language and runtime environment. Backed by your existing code and data, GraphQL is both database and storage engine agnostic.
 
-This guide introduces core GraphQL concepts and shows how to create a GraphQL service. No prior knowledge of GraphQL is required, though some familiarity with query languages will benefit you throughout this guide.
+This guide introduces core GraphQL concepts and shows how to create a GraphQL service. 
+
+{{< alert icon="👉" text="No prior knowledge of GraphQL is required, though some familiarity with query languages will benefit you throughout this guide." />}}
 
 ## Your first GraphQL Service
 
